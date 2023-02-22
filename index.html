@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- For making sure that your pages work well in a large variation of screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap css for certain dropdown components used in project -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- Local external CSS Style sheet for main index file -->
+    <link rel="stylesheet" href="Stylesheet_main.css" />
+    <!-- Script file used for Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Kit used for the icons -->
+    <script
+      src="https://kit.fontawesome.com/ed63e6d666.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ninja Studio</title>
+  </head>
+  <body>
+    <!-- Navigation Bar div consisting of several divs with different icons, search bar and menu items -->
+    <header class="navigation">
+      <!-- For Website Logo and Name-->
+      <div id="one-two">
+        <a href="#"><i class="white fa-brands fa-teamspeak fa-3x logo"></i></a>
+        <a class="website-name white" href="#"
+          ><h3 style="color: whitesmoke;">
+            <span style="color: #f4410b; font-weight: bold;">N</span>inja
+            <span style="color: #f4410b; font-weight: bold;">S</span>tudio
+          </h3></a
+        >
+      </div>
+      <!-- For Favourites menu -->
+      <div id="three">
+        <a class="favs" style="text-decoration: none;" href="#"
+          ><h3 style="color: whitesmoke;" ;>Favorites</h3></a
+        >
+      </div>
+      <!-- For search bar -->
+      <div id="four">
+        <div class="search-bar">
+          <a href="#"
+            ><span class="fa-solid fa-magnifying-glass white"></span
+          ></a>
+          <input
+            type="search"
+            name="search"
+            class="search-ip white"
+            placeholder="Find Music"
+          />
+          <a href="#"><span class="white fa-solid fa-microphone"></span></a>
+        </div>
+      </div>
+      <!-- For Profile image and notification icon -->
+      <div id="five">
+        <a href="#"
+          ><i class="white fa-solid fa-circle-user fa-2x profile-pic"></i
+        ></a>
+        <i class="white fa-solid fa-9 not-dot"></i>
+        <a href="#"><i class="white fa-solid fa-bell fa-2x bell-icon"></i></a>
+      </div>
+      <!-- Hamburger menu hidden at full width but visible below 1000px  -->
+      <div class="dropdown" id="hamburger">
+        <a class="dropdown-toggle" href="#" type="link" data-toggle="dropdown"
+          ><p
+            style="font-size: large; text-decoration: none; color: whitesmoke;"
+          >
+            <i style="display: inline;" class="fa-solid fa-bars white"></i></p
+        ></a>
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#"> Profile</a></li>
+          <li><a href="#"> Favourites</a></li>
+          <li><a href="#"> Notification</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="main-aside-container">
+      <main>
+        <!-- carousel Display Div -->
+        <div id="cards">
+          <img class="card-display" src="images\cards\two.jfif" />
+          <img class="card-display" src="images\cards\three.jfif" />
+          <img class="card-display" src="images\cards\four.jfif" />
+        </div>
+        <!-- Latest Releases Display -->
+        <div id="latest-release">
+          <h2>Latest Release</h2>
+          <div class="latest-release-tracks">
+            <div class="inside-track">
+              <a href="#play-bar"
+                ><img
+                  class="latest-release-songs"
+                  src="images\latest_release\one.jfif"
+              /></a>
+              <div class="latest-song-desc">
+                <p>Masked</p>
+                <h6>Jun 2022</h6>
+              </div>
+              <div class="ellipsis">
+                <div class="dropdown" id="ellipsis-1">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    type="link"
+                    data-toggle="dropdown"
+                    ><p
+                      style="
+                        font-size: large;
+                        text-decoration: none;
+                        color: whitesmoke;
+                      "
+                    >
+                      <i
+                        style="display: inline;"
+                        class="fa-solid fa-ellipsis white"
+                      ></i></p
+                  ></a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-plus"></i> Add To Queue</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-list"></i> Add To Favourites</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-circle-info"></i> Get Info</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <p>4:48</p>
+              </div>
+            </div>
+            <div class="inside-track">
+              <a href="#play-bar"
+                ><img
+                  class="latest-release-songs"
+                  src="images\latest_release\two.jfif"
+              /></a>
+              <div class="latest-song-desc">
+                <p>Avatar 2</p>
+                <h6>Jan 2023</h6>
+              </div>
+              <div class="ellipsis">
+                <div class="dropdown" id="ellipsis-1">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    type="link"
+                    data-toggle="dropdown"
+                  >
+                    <p
+                      style="
+                        font-size: large;
+                        text-decoration: none;
+                        color: whitesmoke;
+                      "
+                    >
+                      <i
+                        style="display: inline;"
+                        class="fa-solid fa-ellipsis white"
+                      ></i></p
+                  ></a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-plus"></i> Add To Queue</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-list"></i> Add To Favourites</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-circle-info"></i> Get Info</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <p>3:48</p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-release-tracks">
+            <div class="inside-track">
+              <a href="#play-bar"
+                ><img
+                  class="latest-release-songs"
+                  src="images\latest_release\three.jfif"
+              /></a>
+              <div class="latest-song-desc">
+                <p>Sunflower</p>
+                <h6>May 2022</h6>
+              </div>
+              <div class="ellipsis">
+                <div class="dropdown" id="ellipsis-1">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    type="link"
+                    data-toggle="dropdown"
+                  >
+                    <p
+                      style="
+                        font-size: large;
+                        text-decoration: none;
+                        color: whitesmoke;
+                      "
+                    >
+                      <i
+                        style="display: inline;"
+                        class="fa-solid fa-ellipsis white"
+                      ></i></p
+                  ></a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-plus"></i> Add To Queue</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-list"></i> Add To Favourites</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-circle-info"></i> Get Info</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <p>4:28</p>
+              </div>
+            </div>
+            <div class="inside-track">
+              <a href="#play-bar"
+                ><img
+                  class="latest-release-songs"
+                  src="images\latest_release\four.jfif"
+              /></a>
+              <div class="latest-song-desc">
+                <p>Watermelon Sugar</p>
+                <h6>Dec 2022</h6>
+              </div>
+              <div class="ellipsis">
+                <div class="dropdown" id="ellipsis-1">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    type="link"
+                    data-toggle="dropdown"
+                  >
+                    <p
+                      style="
+                        font-size: large;
+                        text-decoration: none;
+                        color: whitesmoke;
+                      "
+                    >
+                      <i
+                        style="display: inline;"
+                        class="fa-solid fa-ellipsis white"
+                      ></i></p
+                  ></a>
+                  <ul class="dropdown-menu pull-right">
+                    <li>
+                      <a href="#"><i class="fa-solid fa-play"></i> Play Now</a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-plus"></i> Add To Queue</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-list"></i> Add To Favourites</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i class="fa-solid fa-circle-info"></i> Get Info</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <p>4:08</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Artists -->
+        <h2 style="padding-left: 20px;">Popular Artists</h2>
+
+        <div id="artists-cards">
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img class="artists-image" src="images\coldplay.jfif" />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Cold Play</figcaption>
+          </div>
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img class="artists-image" src="images\artists\amit.jfif" />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Amit Trivedi</figcaption>
+          </div>
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img
+                class="artists-image"
+                src="images\artists\chain-smoker.jfif"
+              />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Chain Smokers</figcaption>
+          </div>
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img
+                class="artists-image"
+                src="images\artists\charlie-puth.jfif"
+              />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Charlie Puth</figcaption>
+          </div>
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img class="artists-image" src="images\artists\ed sheeran.jfif" />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Ed Sheeran</figcaption>
+          </div>
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img
+                class="artists-image"
+                src="images\artists\imagine_dragon.jfif"
+              />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Imagine Dragon</figcaption>
+          </div>
+          <div class="artists-details">
+            <a href="Playlist-Screen.html">
+              <img class="artists-image" src="images\artists\zyan.jpg" />
+            </a>
+            <a class="play-button" href="Playlist-Screen.html"
+              ><i class="play fa-solid fa-play fa-2x"></i
+            ></a>
+            <figcaption>Zyan Malik</figcaption>
+          </div>
+        </div>
+        <h2 style="margin-top: 1cm; margin-left: 20px;">Radio Stations</h2>
+        <div id="radio-stations-container">
+          <div id="radio-logo">
+            <img class="radio-image" src="images\radio_station\radio.webp" />
+          </div>
+          <div class="radio-stations-div">
+            <p class="blur">Love Songs</p>
+            <img
+              class="radio-stations-images"
+              src="images\radio_station\1.jfif"
+            />
+          </div>
+          <div class="radio-stations-div">
+            <p class="blur">Chill Songs</p>
+            <img
+              class="radio-stations-images"
+              src="images\radio_station\chill.webp"
+            />
+          </div>
+          <div class="radio-stations-div">
+            <p class="blur">Retro Music</p>
+            <img
+              class="radio-stations-images"
+              src="images\radio_station\retro.jpg"
+            />
+          </div>
+          <div class="radio-stations-div">
+            <p class="blur">Rock Music</p>
+            <img
+              class="radio-stations-images"
+              src="images\radio_station\rock.jpg"
+            />
+          </div>
+          <div class="radio-stations-div">
+            <p class="blur">Workout Music</p>
+            <img
+              class="radio-stations-images"
+              src="images\radio_station\workout.jfif"
+            />
+          </div>
+          <div class="radio-stations-div">
+            <p class="blur">Pop Music</p>
+            <img
+              class="radio-stations-images"
+              src="images\radio_station\pop.jpg"
+            />
+          </div>
+        </div>
+        <div id="Mood-playlist">
+          <div class="mood-container">
+            <img src="images\moods\party.jpg" />
+            <div class="child">
+              <p>Party Music</p>
+            </div>
+          </div>
+          <div class="mood-container">
+            <img src="images\moods\edm.jpg" />
+            <div class="child">
+              <p>EDM</p>
+            </div>
+          </div>
+          <div class="mood-container">
+            <img src="images\moods\road trip.jpg" />
+            <div class="child">
+              <p>Long Drive</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest Songs Div -->
+        <h2 style="padding-left: 2%;">Latest English Songs</h2>
+        <div id="latest-songs">
+          <div class="song-latest-div">
+            <img src="images\latest_eng\flowers.jfif" />
+            <p class="latest-song-name">Flowers</p>
+            <p>Jan 15, 2023</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\escape.jfif" />
+            <p class="latest-song-name">Escape</p>
+            <p>Aug 16, 2022</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\indigo.jfif" />
+            <p class="latest-song-name">Indigo</p>
+            <p>Jan 12, 2022</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\kill bill.jfif" />
+            <p class="latest-song-name">Kill Bill</p>
+            <p>Jun 30, 2023</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\slime.jfif" />
+            <p class="latest-song-name">Slime</p>
+            <p>Jul 10, 2023</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\venom.jfif" />
+            <p class="latest-song-name">Venom</p>
+            <p>Apr 1, 2022</p>
+          </div>
+        </div>
+        <h2 style="padding-left: 2%;">Latest Hindi Songs</h2>
+        <div id="latest-songs">
+          <div class="song-latest-div">
+            <img src="images\latest_eng\flowers.jfif" />
+            <p class="latest-song-name">Flowers</p>
+            <p>Jan 15, 2023</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\escape.jfif" />
+            <p class="latest-song-name">Escape</p>
+            <p>Aug 16, 2022</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\indigo.jfif" />
+            <p class="latest-song-name">Indigo</p>
+            <p>Jan 12, 2022</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\kill bill.jfif" />
+            <p class="latest-song-name">Kill Bill</p>
+            <p>Jun 30, 2023</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\slime.jfif" />
+            <p class="latest-song-name">Slime</p>
+            <p>Jul 10, 2023</p>
+          </div>
+          <div class="song-latest-div">
+            <img src="images\latest_eng\venom.jfif" />
+            <p class="latest-song-name">Venom</p>
+            <p>Apr 1, 2022</p>
+          </div>
+        </div>
+      </main>
+      <!-- Play Pause Bar in Bottom with divs for each item displayed in flex order rowise -->
+      <div id="play-bar" class="play-pause-bar">
+        <div id="c1">
+          <img id="playing-song" src="images\songs\kaipoche.jfif" alt="Error" />
+          <div style="line-height: 3px;">
+            <p style="line-height: 1px;" class="white">Kai Po Che</p>
+            <p style="font-size: small;" class="white">Amit Trivedi</p>
+          </div>
+          <i class="heartgreen white fa-solid fa-heart"></i>
+          <i class="white fa-solid fa-ban"></i>
+        </div>
+        <div id="c2">
+          <div id="play-pause">
+            <i class="white fa-solid fa-shuffle"></i>
+            <i class="white fa-solid fa-backward-step"></i>
+            <i class="white fa-regular fa-circle-pause"></i>
+            <i class="white fa-solid fa-forward-step"></i>
+            <i class="white fa-solid fa-repeat"></i>
+          </div>
+          <div id="BAR">
+            <div id="Bar1">
+              <p class="white">0:00</p>
+              <input id="barsize" type="range" value="30" />
+              <p class="white">4:44</p>
+            </div>
+          </div>
+        </div>
+        <div id="c3" style="display: flex; justify-content: space-around;">
+          <i class="white fa-solid fa-list"></i>
+          <i class="white fa-solid fa-desktop"></i>
+          <i class="white fa-solid fa-volume-high"></i>
+          <input type="range" value="35" />
+          <i class="white fa-solid fa-expand"></i>
+        </div>
+      </div>
+      <aside>
+        <div class="queue-head">
+          <p id="queue" style="font-size: x-large; display: inline;">Queue</p>
+          <div class="dropdown" id="sort-by">
+            <a
+              class="dropdown-toggle"
+              href="#"
+              type="link"
+              data-toggle="dropdown"
+            >
+              <p
+                style="
+                  font-size: large;
+                  text-decoration: none;
+                  color: whitesmoke;
+                "
+              >
+                Sort by
+              </p></a
+            >
+            <ul class="dropdown-menu">
+              <li><a href="#">Playlist</a></li>
+              <li><a href="#">Favourites</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="queue-list">
+          <ol>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\hansraj.jpg" />
+                <div class="song-desc">
+                  <h4>Shankara</h4>
+                  <p>Hansraj Raghuvanshi</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\drake.jfif" />
+                <div class="song-desc">
+                  <h4>God's Plan</h4>
+                  <p>Drake</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\jehda nasha.jpg" />
+                <div class="song-desc">
+                  <h4>Jehda Nasha</h4>
+                  <p>Smitx99</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\bhaag milkha.jfif" />
+                <div class="song-desc">
+                  <h4>Zinda</h4>
+                  <p>Siddharth</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\halka halka.jfif" />
+                <div class="song-desc">
+                  <h4>Halka Halka</h4>
+                  <p>Sunidhi</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\kaipoche.jfif" />
+                <div class="song-desc">
+                  <h4>Shubhaarambh</h4>
+                  <p>Shruti Pathak</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\namo.jfif" />
+                <div class="song-desc">
+                  <h4>Namo Namo</h4>
+                  <p>Amit Trivedi</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\ranjithame.jpg" />
+                <div class="song-desc">
+                  <h4>Ranjithame</h4>
+                  <p>DSP</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\sharks.jfif" />
+                <div class="song-desc">
+                  <h4>Sharks</h4>
+                  <p>Imagine Dragons</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\smoke+mirror.jfif" />
+                <div class="song-desc">
+                  <h4>Bones</h4>
+                  <p>Imagine Dragons</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\hansraj.jpg" />
+                <div class="song-desc">
+                  <h4>Shankara</h4>
+                  <p>Hansraj Raghuvanshi</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\drake.jfif" />
+                <div class="song-desc">
+                  <h4>God's Plan</h4>
+                  <p>Drake</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\jehda nasha.jpg" />
+                <div class="song-desc">
+                  <h4>Jehda Nasha</h4>
+                  <p>Smitx99</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\bhaag milkha.jfif" />
+                <div class="song-desc">
+                  <h4>Zinda</h4>
+                  <p>Siddharth</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\halka halka.jfif" />
+                <div class="song-desc">
+                  <h4>Halka Halka</h4>
+                  <p>Sunidhi</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\kaipoche.jfif" />
+                <div class="song-desc">
+                  <h4>Shubhaarambh</h4>
+                  <p>Shruti Pathak</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\namo.jfif" />
+                <div class="song-desc">
+                  <h4>Namo Namo</h4>
+                  <p>Amit Trivedi</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\ranjithame.jpg" />
+                <div class="song-desc">
+                  <h4>Ranjithame</h4>
+                  <p>DSP</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\sharks.jfif" />
+                <div class="song-desc">
+                  <h4>Sharks</h4>
+                  <p>Imagine Dragons</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+            <li>
+              <div class="queue-songs">
+                <img class="song-img" src="images\songs\smoke+mirror.jfif" />
+                <div class="song-desc">
+                  <h4>Bones</h4>
+                  <p>Imagine Dragons</p>
+                </div>
+                <a class="Like" href="#"
+                  ><i class="white fa-regular fa-heart"></i
+                ></a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
